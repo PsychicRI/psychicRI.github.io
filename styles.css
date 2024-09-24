@@ -9,17 +9,23 @@ body {
     background-color: #121212; /* Dark background */
     color: #f0f0f0; /* Light text */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
 }
 
 .container {
     text-align: center;
-    max-width: 600px;
+    max-width: 1000px;
     padding: 20px;
+    margin: 0 auto;
+    flex-grow: 1;
+    padding-top: 170px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
 }
+
 
 .company-name {
     font-size: 3em;
@@ -44,16 +50,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: 60%; /* Ensure the inputs take the full width of the parent */
     padding: 10px;
     border: 1px solid #333;
     border-radius: 5px;
     background-color: #1d1d1d;
     color: #fff;
+    
 }
 
 .contact-form button {
@@ -65,6 +73,7 @@ body {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 60%;
 }
 
 .contact-form button:hover {
@@ -79,12 +88,9 @@ body {
     .slogan {
         font-size: 1.2em;
     }
-}
-
-.container {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
+    .container {
+        padding-top:100px;
+    }
 }
 
 @keyframes fadeInUp {
@@ -109,9 +115,9 @@ footer {
     text-align: center;
     color: #ccc;
     font-size: 0.9em;
-    position: absolute;
     width: 100%;
     bottom: 0;
+    position: relative;
 }
 
 .footer-content {
@@ -131,10 +137,156 @@ footer {
     font-size: 24px;
     transition: color 0.3s, transform 0.3s;
 }
-
 .social-icons a:hover {
     color: #ffffff; /* Brighter on hover */
     transform: scale(1.1);
 }
 
+/* Styling for the new offer section */
+.offer-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 0 20px;
+}
 
+.offer-box {
+    flex-basis: 45%;
+    padding: 20px;
+    background-color: transparent; /* Adjust background color as needed */
+    border-radius: 8px;
+    text-align: left;
+}
+
+.offer-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.offer-box p {
+    font-size: 1em;
+    line-height: 1.6;
+    
+}
+/* Styling for the buttons under the second section */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the buttons */
+    margin-top: 40px; /* Space between the buttons and the offer section */
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    align-items: center;
+    display:flex;
+    gap: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.action-buttons button:hover {
+    background-color: #3700b3;
+}
+
+.outline-btn {
+    background-color: transparent;
+    color: #6200ea;
+    border: 2px solid #6200ea;
+}
+
+.outline-btn:hover {
+    background-color: #6200ea;
+    color: white;
+}
+
+/* Solid style for Contact Us button */
+.solid-btn {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+}
+
+.solid-btn:hover {
+    background-color: #3700b3;
+}
+
+/* Icon Styling */
+.action-buttons i {
+    font-size: 1.2em; /* Adjust icon size */
+    vertical-align: middle;
+}
+
+
+/* Styling for the new section */
+.next-section {
+    padding: 50px 20px;
+    background-color: #1d1d1d; /* Background for contrast */
+    color: #f0f0f0;
+    animation: fadeIn 1s forwards;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Space between the two halves */
+}
+
+.image-half {
+    flex-basis: 50%; /* Left half takes 50% */
+    flex-shrink: 1;
+}
+
+.image-half img {
+    width: 80%;
+    height: 300px;
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.text-half {
+    flex-basis: 50%; /* Right half takes 50% */
+    text-align: left;
+    flex-shrink:1;
+}
+
+.text-half h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.text-half p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.text-half hr {
+    border: 1px solid #6200ea; /* Color for the dividing line */
+    margin: 20px 0;
+}
+
+.text-half ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.text-half ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

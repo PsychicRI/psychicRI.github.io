@@ -15,6 +15,50 @@
     <div class="container">
         <h1 class="company-name">🔮 PsychicRI</h1>
         <p class="slogan">Mining data. Connecting minds.</p>
+        <br>
+        <div class="action-buttons">
+            <button id="learn-more" class="outline-btn">
+                <i class="fas fa-chevron-down"></i> Learn more
+            </button>
+            <button id="scroll-to-contact" class="solid-btn">
+                <i class="fas fa-envelope"></i> Contact us
+            </button>
+        </div>
+        <div class="offer-section">
+            <div class="offer-box">
+                <h3>AI-powered match-making</h3>
+                <p>We use AI and machine learning to optimally match eventgoers based on common interests.</p>
+            </div>  
+            <div class="offer-box">
+                <h3>Open source tech</h3>
+                <p>We proudly support Open Source tech by adapting, and publically releasing, matching algorithms previously featured in eLife and Nature.</p>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <div id="next-section" class="next-section">
+            <div class="content-container">
+                <!-- Left half: Image -->
+                <div class="image-half">
+                    <img src="networking.webp" alt="Description of image" />
+                </div>
+                <!-- Right half: Text content -->
+                <div class="text-half">
+                    <h2>A better way to network</h2>
+                    <p>No more wandering around hoping for it to click. Mind Matching is an AI-powered tool to get the most out of networking events. We'll help you set up a Mind Matching session at your event.</p>
+                    <hr>
+                    <ul>
+                        <li>Meet people with similar interests and expertise</li>
+                        <li>Skip the small-talk and dive right in</li>
+                        <li>Create lasting connections</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
         <h2>Get in touch.</h2><br>
         <form class="contact-form" action="https://formspree.io/f/xdknrbzb" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -23,7 +67,8 @@
             <input type="hidden" name="_next" value="index.html">
             <button type="submit">Send Message</button>
         </form>
-        <br><br>
+        <br>
+        <br>
         <!-- <h3>Follow us on social media.</h2><br> -->
         <div class="social-icons">
             <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a> -->
@@ -37,5 +82,33 @@
             <p>&copy; 2024 Psychic Research Informatics. All Rights Reserved.</p><br>
         </div>    
     </footer>
+
+    <!-- <script>
+        // Smooth scroll to the contact form
+        document.getElementById('scroll-to-contact').addEventListener('click', function() {
+            document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
+        });
+    
+        // Placeholder for 'Learn more' button
+        document.getElementById('learn-more').addEventListener('click', function() {
+            const nextSection = document.getElementById('next-section');
+            nextSection.style.display = 'block'; // Show the section
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script> -->
+    <script>
+        // Smooth scroll to the contact form
+        document.getElementById('scroll-to-contact').addEventListener('click', function() {
+            document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
+        });
+    
+        // Smooth scroll to the next section on Learn more button click
+        document.getElementById('learn-more').addEventListener('click', function() {
+            document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    
+    
+
 </body>
 </html>
