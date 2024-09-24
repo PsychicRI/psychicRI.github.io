@@ -104,7 +104,11 @@
     
         // Smooth scroll to the next section on Learn more button click
         document.getElementById('learn-more').addEventListener('click', function() {
-            document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });
+            const nextSection = document.getElementById('next-section');
+            const offset = -100
+
+            const nextSectionPosition = nextSection.getBoundingClientRect().top + window.scrollY + offset;
+            window.scrollTo({ top: nextSectionPosition, behavior: 'smooth' });
         });
     </script>
     
