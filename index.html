@@ -12,109 +12,442 @@
 
 </head>
 <body>
-    <div class="container">
-        <h1 class="company-name">🔮 PsychicRI</h1>
-        <p class="slogan">Mining data. Connecting minds.</p>
-        <h2>Specialized data analytics and consulting for scientists, organizations and individuals. </h2>
-        <div class="action-buttons">
-            <button id="learn-more" class="outline-btn">
-                <i class="fas fa-chevron-down"></i> Learn more
-            </button>
-            <button id="scroll-to-contact" class="solid-btn">
-                <i class="fas fa-envelope"></i> Contact us
-            </button>
-        </div>
-        <div class="offer-section">
-            <div class="offer-box">
-                <h3>AI-powered match-making</h3>
-                <p>We use AI and machine learning to optimally match eventgoers based on common interests.</p>
-            </div>  
-            <div class="offer-box">
-                <h3>Open source tech</h3>
-                <p>We proudly support Open Source tech by adapting, and publically releasing, matching algorithms.</p>
+    <div id="background-animation"></div>
+    <div class="content-wrapper">
+        <div class="container">
+            <h1 class="company-name">🔮 PsychicRI</h1>
+            <p class="slogan">Mining data. Connecting minds.</p>
+            <h2>Specialized data analytics and consulting for scientists, organizations and individuals. </h2>
+            <div class="action-buttons">
+                <button id="learn-more" class="outline-btn">
+                    <i class="fas fa-chevron-down"></i> Learn more
+                </button>
+                <button id="scroll-to-contact" class="solid-btn">
+                    <i class="fas fa-envelope"></i> Contact us
+                </button>
             </div>
-        </div>
-        <div id="next-section" class="next-section">
-            <div class="content-container">
-                <!-- Left half: Image -->
-                <div class="image-half">
-                    <img src="networking.webp" alt="Description of image" />
-                </div>
-                <!-- Right half: Text content -->
-                <div class="text-half">
-                    <h2>A better way to network</h2>
-                    <p>Wander less. Connect more. Mind Matching is an AI-powered tool to get the most out of networking events. 
-                        <br>
-                        <br>
-                        We'll help you set up a Mind Matching session at your event.</p>
-                    <hr>
-                    <p>We provide:</p>
-                    <ul>
-                        <li>Full techical support</li>
-                        <li>Guaranteed match with people of similar interests and expertise</li>
-                        <li>A chance to skip the small-talk and dive right in</li>
-                        <li>An opportunity to make lasting connections</li>
-                    </ul>
+            <div class="offer-section">
+                <div class="offer-box">
+                    <h3>AI-powered match-making</h3>
+                    <p>We use AI and machine learning to optimally match eventgoers based on common interests.</p>
+                </div>  
+                <div class="offer-box">
+                    <h3>Open source tech</h3>
+                    <p>We proudly support Open Source tech by adapting, and publically releasing, matching algorithms.</p>
                 </div>
             </div>
+            <div id="next-section" class="next-section">
+                <div class="content-container">
+                    <!-- Left half: Image -->
+                    <div class="image-half">
+                        <img src="networking.webp" alt="Description of image" />
+                    </div>
+                    <!-- Right half: Text content -->
+                    <div class="text-half">
+                        <h2>A better way to network</h2>
+                        <p>Wander less. Connect more. Mind Matching is an AI-powered tool to get the most out of networking events. 
+                            <br>
+                            <br>
+                            We'll help you set up a Mind Matching session at your event.</p>
+                        <hr>
+                        <p>We provide:</p>
+                        <ul>
+                            <li>Full techical support</li>
+                            <li>Guaranteed match with people of similar interests and expertise</li>
+                            <li>A chance to skip the small-talk and dive right in</li>
+                            <li>An opportunity to make lasting connections</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2>Get in touch.</h2><br>
+            <form class="contact-form" action="https://formspree.io/f/xdknrbzb" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="hidden" name="_next" value="index.html">
+                <button type="submit">Send Message</button>
+            </form>
+            <br>
+            <br>
+            <!-- <h3>Follow us on social media.</h2><br> -->
+            <div class="social-icons">
+                <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a> -->
+                <a href="https://www.twitter.com/psychicRI" target="_blank"><i class="fab fa-twitter"></i></a>
+                <!-- <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a> -->
+            </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <h2>Get in touch.</h2><br>
-        <form class="contact-form" action="https://formspree.io/f/xdknrbzb" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <input type="hidden" name="_next" value="index.html">
-            <button type="submit">Send Message</button>
-        </form>
-        <br>
-        <br>
-        <!-- <h3>Follow us on social media.</h2><br> -->
-        <div class="social-icons">
-            <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a> -->
-            <a href="https://www.twitter.com/psychicRI" target="_blank"><i class="fab fa-twitter"></i></a>
-            <!-- <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a> -->
-        </div>
+        <footer>
+            <div class="social-icons">
+                <p>&copy; Psychic Research Informatics, 2024.</p><br>
+            </div>    
+        </footer>
+    
+        <!-- <script>
+            // Smooth scroll to the contact form
+            document.getElementById('scroll-to-contact').addEventListener('click', function() {
+                document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
+            });
+        
+            // Placeholder for 'Learn more' button
+            document.getElementById('learn-more').addEventListener('click', function() {
+                const nextSection = document.getElementById('next-section');
+                nextSection.style.display = 'block'; // Show the section
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        </script> -->
+        <script>
+            // Smooth scroll to the contact form
+            document.getElementById('scroll-to-contact').addEventListener('click', function() {
+                document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
+            });
+        
+            // Smooth scroll to the next section on Learn more button click
+            document.getElementById('learn-more').addEventListener('click', function() {
+                const nextSection = document.getElementById('next-section');
+                const offset = -100
+
+                const nextSectionPosition = nextSection.getBoundingClientRect().top + window.scrollY + offset;
+                window.scrollTo({ top: nextSectionPosition, behavior: 'smooth' });
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
+        <script>
+        // PARAMETERS
+        const CONSTELLATION_COUNT = 17;       
+        const STAR_COUNT_MIN = 3;           
+        const STAR_COUNT_MAX = 8;          
+        const LINE_CONNECTION_RATIO = 0.15;
+        const STAR_SPEED = 0.045;
+        const MAX_DISPLACEMENT = 10;
+        
+        // We'll define two sizes:
+        const NORMAL_STAR_SIZE = 5;
+        const BIG_STAR_SIZE = 9; // Larger size for some stars
+        
+        // Non-overlapping parameters
+        const CONSTELLATION_RADIUS = 100; 
+        const MAX_POSITION_ATTEMPTS = 100;
+        
+        // Positioning constraints
+        const POSITION_RANGE = 400;
+        const Z_BASE = -100;  
+        const Z_VARIATION = -100; 
+        
+        let scene, camera, renderer;
+        let constellations = [];
+        let constellationCenters = [];
+        
+        const textureLoader = new THREE.TextureLoader();
+        // Using a circle sprite from three.js examples
+        const starTexture = textureLoader.load('https://threejs.org/examples/textures/sprites/circle.png');
+        
+        init();
+        animate();
+        
+        function init() {
+            const bgAnimation = document.getElementById('background-animation');
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(bgAnimation.clientWidth, bgAnimation.offsetHeight);
+            // renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            document.getElementById('background-animation').appendChild(renderer.domElement);
+
+            // document.body.appendChild(renderer.domElement);
+            
+            scene = new THREE.Scene();
+            
+            camera = new THREE.PerspectiveCamera(60, bgAnimation.offsetWidth / bgAnimation.offsetHeight, 1, 2000);
+            camera.position.set(0, 0, 300);
+            camera.lookAt(new THREE.Vector3(0, 0, 0));
+            
+            for (let i = 0; i < CONSTELLATION_COUNT; i++) {
+                const starCount = THREE.MathUtils.randInt(STAR_COUNT_MIN, STAR_COUNT_MAX);
+            
+                let {offsetX, offsetY, offsetZ} = findNonOverlappingPosition(constellationCenters, CONSTELLATION_RADIUS, MAX_POSITION_ATTEMPTS);
+                constellationCenters.push({x: offsetX, y: offsetY, z: offsetZ});
+            
+                const constellation = createConstellation(starCount, LINE_CONNECTION_RATIO, offsetX, offsetY, offsetZ);
+                constellations.push(constellation);
+            
+                // Add both sets of points and line segments to the scene
+                scene.add(constellation.starPointsNormal);
+                scene.add(constellation.starPointsBig);
+                scene.add(constellation.lineSegments);
+            }  
+          window.addEventListener('resize', onWindowResize, false);
+        }
+        
+        function findNonOverlappingPosition(existingCenters, radius, maxAttempts) {
+          for (let attempt = 0; attempt < maxAttempts; attempt++) {
+            const offsetX = (Math.random() - 0.5) * (POSITION_RANGE * 2);
+            const offsetY = (Math.random() - 0.5) * (POSITION_RANGE * 2);
+            const offsetZ = Z_BASE + (Math.random() * Z_VARIATION);
+        
+            let tooClose = false;
+            for (const center of existingCenters) {
+              const dx = center.x - offsetX;
+              const dy = center.y - offsetY;
+              const dz = center.z - offsetZ;
+              const dist = Math.sqrt(dx*dx + dy*dy + dz*dz);
+              if (dist < radius * 2) {
+                tooClose = true;
+                break;
+              }
+            }
+        
+            if (!tooClose) {
+              return {offsetX, offsetY, offsetZ};
+            }
+          }
+        
+          // Fallback if none found
+          return {
+            offsetX: (Math.random() - 0.5) * (POSITION_RANGE * 2),
+            offsetY: (Math.random() - 0.5) * (POSITION_RANGE * 2),
+            offsetZ: Z_BASE + (Math.random() * Z_VARIATION)
+          };
+        }
+        
+        function createConstellation(starCount, lineRatio, offsetX, offsetY, offsetZ) {
+          const stars = [];
+          const positions = new Float32Array(starCount * 3);
+        
+          // Decide how many stars are "big"
+          const bigStarCount = Math.floor(starCount * 0.3); // 30% bigger stars
+          const bigStarIndices = new Set();
+          while (bigStarIndices.size < bigStarCount) {
+            bigStarIndices.add(THREE.MathUtils.randInt(0, starCount - 1));
+          }
+        
+          for (let i = 0; i < starCount; i++) {
+            const x = (Math.random() - 0.5) * 200 + offsetX;
+            const y = (Math.random() - 0.5) * 200 + offsetY;
+            const z = offsetZ + (Math.random() * -50);
+        
+            positions[i * 3] = x;
+            positions[i * 3 + 1] = y;
+            positions[i * 3 + 2] = z;
+        
+            stars.push({
+              baseX: x,
+              baseY: y,
+              baseZ: z,
+              offsetX: Math.random() * Math.PI * 2,
+              offsetY: Math.random() * Math.PI * 2,
+              offsetZ: Math.random() * Math.PI * 2,
+              speedX: (Math.random() - 0.5) * STAR_SPEED,
+              speedY: (Math.random() - 0.5) * STAR_SPEED,
+              speedZ: (Math.random() - 0.5) * STAR_SPEED,
+              isBig: bigStarIndices.has(i)
+            });
+          }
+        
+          // Split into two geometries: one for normal, one for big
+          const normalPositions = [];
+          const bigPositions = [];
+          
+          for (let i = 0; i < starCount; i++) {
+            const idx = i * 3;
+            if (stars[i].isBig) {
+              bigPositions.push(positions[idx], positions[idx+1], positions[idx+2]);
+            } else {
+              normalPositions.push(positions[idx], positions[idx+1], positions[idx+2]);
+            }
+          }
+        
+          const normalGeometry = new THREE.BufferGeometry();
+          normalGeometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(normalPositions), 3));
+        
+          const bigGeometry = new THREE.BufferGeometry();
+          bigGeometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(bigPositions), 3));
+        
+          // Use the circle texture to make them round
+          const baseMaterialProps = {
+            color: 0xf5f0e9,
+            map: starTexture,
+            transparent: true,
+            alphaTest: 0.5,
+            depthWrite: false,
+            blending: THREE.AdditiveBlending
+          };
+        
+          const starMaterialNormal = new THREE.PointsMaterial({
+            ...baseMaterialProps,
+            size: NORMAL_STAR_SIZE
+          });
+        
+          const starMaterialBig = new THREE.PointsMaterial({
+            ...baseMaterialProps,
+            size: BIG_STAR_SIZE
+          });
+        
+          const starPointsNormal = new THREE.Points(normalGeometry, starMaterialNormal);
+          const starPointsBig = new THREE.Points(bigGeometry, starMaterialBig);
+        
+          // Create line pairs
+          let linePairs = [];
+          for (let i = 0; i < starCount; i++) {
+            for (let j = i + 1; j < starCount; j++) {
+              if (Math.random() < lineRatio) {
+                linePairs.push([i, j]);
+              }
+            }
+          }
+        
+          // Ensure no isolated stars
+          let starConnections = new Array(starCount).fill(0);
+          linePairs.forEach(pair => {
+            starConnections[pair[0]]++;
+            starConnections[pair[1]]++;
+          });
+        
+          for (let i = 0; i < starCount; i++) {
+            if (starConnections[i] === 0) {
+              const closest = findClosestStar(i, positions, starCount);
+              linePairs.push([i, closest]);
+              starConnections[i]++;
+              starConnections[closest]++;
+            }
+          }
+        
+          const linePositions = new Float32Array(linePairs.length * 6);
+          const lineGeometry = new THREE.BufferGeometry();
+          lineGeometry.setAttribute('position', new THREE.BufferAttribute(linePositions, 3));
+          const lineMaterial = new THREE.LineBasicMaterial({
+            color: 0xffffff,
+            transparent: true,
+            opacity: 0.7
+          });
+          const lineSegments = new THREE.LineSegments(lineGeometry, lineMaterial);
+        
+          return {
+            stars,
+            linePairs,
+            linePositions,
+            starPointsNormal,
+            starPointsBig,
+            lineSegments,
+            // We'll store a reference to their original positions in stars objects
+            // No need to keep the original big/normal arrays separate after creation
+          };
+        }
+        
+        function findClosestStar(starIndex, positions, starCount) {
+          const sx = positions[starIndex * 3];
+          const sy = positions[starIndex * 3 + 1];
+          const sz = positions[starIndex * 3 + 2];
+          
+          let closestIndex = -1;
+          let minDist = Infinity;
+          
+          for (let i = 0; i < starCount; i++) {
+            if (i !== starIndex) {
+              const dx = positions[i * 3] - sx;
+              const dy = positions[i * 3 + 1] - sy;
+              const dz = positions[i * 3 + 2] - sz;
+              const dist = dx*dx + dy*dy + dz*dz;
+              if (dist < minDist) {
+                minDist = dist;
+                closestIndex = i;
+              }
+            }
+          }
+          return closestIndex;
+        }
+        
+        function onWindowResize() {
+            const bgAnimation = document.getElementById('background-animation');
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+        
+        function animate() {
+          requestAnimationFrame(animate);
+        
+          for (let c = 0; c < constellations.length; c++) {
+            const constellation = constellations[c];
+            const { stars, linePairs, linePositions } = constellation;
+        
+            // We need to update both normal and big star sets
+            // Extract their positions arrays
+            const normalAttr = constellation.starPointsNormal.geometry.attributes.position;
+            const bigAttr = constellation.starPointsBig.geometry.attributes.position;
+            const normalPositions = normalAttr.array;
+            const bigPositions = bigAttr.array;
+        
+            let normalIndex = 0;
+            let bigIndex = 0;
+        
+            for (let i = 0; i < stars.length; i++) {
+              const star = stars[i];
+              star.offsetX += star.speedX;
+              star.offsetY += star.speedY;
+              star.offsetZ += star.speedZ;
+        
+              const newX = star.baseX + Math.sin(star.offsetX) * MAX_DISPLACEMENT;
+              const newY = star.baseY + Math.sin(star.offsetY) * MAX_DISPLACEMENT;
+              const newZ = star.baseZ + Math.sin(star.offsetZ) * MAX_DISPLACEMENT;
+        
+              if (star.isBig) {
+                bigPositions[bigIndex++] = newX;
+                bigPositions[bigIndex++] = newY;
+                bigPositions[bigIndex++] = newZ;
+              } else {
+                normalPositions[normalIndex++] = newX;
+                normalPositions[normalIndex++] = newY;
+                normalPositions[normalIndex++] = newZ;
+              }
+            }
+        
+            normalAttr.needsUpdate = true;
+            bigAttr.needsUpdate = true;
+        
+            // We need to reconstruct a combined list of all positions to update the lines.
+            // To update linePositions, we must know the final positions of each star by index.
+            // Rebuild a quick temporary array of all star positions in order of indices.
+            const allStarPositions = new Float32Array(stars.length * 3);
+            normalIndex = 0;
+            bigIndex = 0;
+            for (let i = 0; i < stars.length; i++) {
+              if (stars[i].isBig) {
+                allStarPositions[i*3]   = bigPositions[bigIndex];
+                allStarPositions[i*3+1] = bigPositions[bigIndex+1];
+                allStarPositions[i*3+2] = bigPositions[bigIndex+2];
+                bigIndex += 3;
+              } else {
+                allStarPositions[i*3]   = normalPositions[normalIndex];
+                allStarPositions[i*3+1] = normalPositions[normalIndex+1];
+                allStarPositions[i*3+2] = normalPositions[normalIndex+2];
+                normalIndex += 3;
+              }
+            }
+        
+            // Update lines
+            for (let k = 0; k < linePairs.length; k++) {
+              const [i, j] = linePairs[k];
+              const iPos = i * 3;
+              const jPos = j * 3;
+              linePositions[k * 6]     = allStarPositions[iPos];
+              linePositions[k * 6 + 1] = allStarPositions[iPos + 1];
+              linePositions[k * 6 + 2] = allStarPositions[iPos + 2];
+              linePositions[k * 6 + 3] = allStarPositions[jPos];
+              linePositions[k * 6 + 4] = allStarPositions[jPos + 1];
+              linePositions[k * 6 + 5] = allStarPositions[jPos + 2];
+            }
+        
+            constellation.lineSegments.geometry.attributes.position.needsUpdate = true;
+          }
+        
+          renderer.render(scene, camera);
+        }
+        </script>        
     </div>
-    <footer>
-        <div class="social-icons">
-            <p>&copy; Psychic Research Informatics, 2024.</p><br>
-        </div>    
-    </footer>
-
-    <!-- <script>
-        // Smooth scroll to the contact form
-        document.getElementById('scroll-to-contact').addEventListener('click', function() {
-            document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
-        });
-    
-        // Placeholder for 'Learn more' button
-        document.getElementById('learn-more').addEventListener('click', function() {
-            const nextSection = document.getElementById('next-section');
-            nextSection.style.display = 'block'; // Show the section
-            nextSection.scrollIntoView({ behavior: 'smooth' });
-        });
-    </script> -->
-    <script>
-        // Smooth scroll to the contact form
-        document.getElementById('scroll-to-contact').addEventListener('click', function() {
-            document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
-        });
-    
-        // Smooth scroll to the next section on Learn more button click
-        document.getElementById('learn-more').addEventListener('click', function() {
-            const nextSection = document.getElementById('next-section');
-            const offset = -100
-
-            const nextSectionPosition = nextSection.getBoundingClientRect().top + window.scrollY + offset;
-            window.scrollTo({ top: nextSectionPosition, behavior: 'smooth' });
-        });
-    </script>
-    
-    
 
 </body>
 </html>
