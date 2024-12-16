@@ -16,7 +16,7 @@
     <div class="content-wrapper">
         <div class="container">
 
-            <div class="title-section">
+            <div id="logo-section" class="title-section">
                 <div class="emoji">🔮</div>
                 <div class="title-text">
                     <h1 class="company-name">PsychicRI</h1>
@@ -24,8 +24,10 @@
                 </div>
             </div>
 
+            <!-- <button id="export-logo">Export Logo</button> -->
+
             <p class="slogan">Mining data. Connecting minds.</p>
-            <h2>Specialized data analytics and consulting for scientists, organizations and individuals. </h2>
+            <h2>Analytics and consulting for scientists, organizations and individuals. </h2>
             <div class="action-buttons">
                 <button id="learn-more" class="outline-btn">
                     <i class="fas fa-chevron-down"></i> Learn more
@@ -41,7 +43,7 @@
                 </div>  
                 <div class="offer-box">
                     <h3>Open source tech</h3>
-                    <p>We proudly support Open Source tech by adapting, and publically releasing, matching algorithms.</p>
+                    <p>We proudly support open source tech by adapting, and publically releasing, matching algorithms.</p>
                 </div>
             </div>
             <div id="next-section" class="next-section">
@@ -455,6 +457,19 @@
           renderer.render(scene, camera);
         }
         </script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+        <script>
+            document.getElementById('export-logo').addEventListener('click', function () {
+                const logoSection = document.getElementById('logo-section');
+                html2canvas(logoSection, { backgroundColor: null }).then(canvas => {
+                    const link = document.createElement('a');
+                    link.download = 'PsychicRI_Logo.png';
+                    link.href = canvas.toDataURL();
+                    link.click();
+                });
+            });
+        </script>
     </div>
 
 </body>
