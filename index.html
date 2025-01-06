@@ -38,13 +38,15 @@
             </div>
             <div class="offer-section">
                 <div class="offer-box">
-                    <h3>AI-powered match-making</h3>
-                    <p>We use AI and machine learning to optimally match eventgoers based on common interests.</p>
-                </div>  
-                <div class="offer-box">
-                    <h3>Open source tech</h3>
-                    <p>We proudly support open source tech by adapting, and publically releasing, matching algorithms.</p>
+                    <h3>Science, for <span class="scramble-word" id="scrambleWord">you.</span></h3>
+                    <p>With <a href="https://myxiv.com" style="color: white; text-decoration: none;"><b>myXiv</b>&#x2197;</a>, we're democratizing science by turning papers into personnalized podcasts.</p>
+                  
+
                 </div>
+                <div class="offer-box">
+                    <h3>AI-powered mind matching.</h3>
+                    <p>We connect with like-minded individuals at events using AI and machine learning.</p>
+                </div>  
             </div>
             <div id="next-section" class="next-section">
                 <div class="content-container">
@@ -55,10 +57,10 @@
                     <!-- Right half: Text content -->
                     <div class="text-half">
                         <h2>A better way to network</h2>
-                        <p>Wander less. Connect more. Mind Matching is an AI-powered tool to get the most out of networking events. 
+                        <p>Wander less. Connect more. <b>Mind matching</b> is an AI-powered tool to get the most out of networking events. 
                             <br>
                             <br>
-                            We'll help you set up a Mind Matching session at your event.</p>
+                            We'll help you set up a mind matching session at your event.</p>
                         <hr>
                         <p>We provide:</p>
                         <ul>
@@ -70,6 +72,34 @@
                     </div>
                 </div>
             </div>
+
+            <br>
+            <br>
+            <br>
+            <div id="next-section" class="next-section">
+              <div class="content-container">
+                  <!-- Right half: Text content -->
+                  <div class="text-half">
+                    <h2>Making science more accessible</h2>
+                    <p>Upload a scientific paper, customize your preferences, and get a clear, engaging podcast. 
+                        <br>
+                        <br>
+                        Summarize and understand scientific papers effortlessly, with <a href="https://myxiv.com" style="color: white; text-decoration: none;"><b>myXiv</b>&#x2197;</a>. </p>
+                    <hr>
+                    <!-- <p>We provide:</p> -->
+                    <ul>
+                        <li>Simplify complex research</li>
+                        <li>Engage deeply with the literature</li>
+                        <li>Perfect for students, researchers, or anyone looking to understand science effortlessly</li>
+                    </ul>
+                  </div>
+                  <!-- Left half: Image -->
+                  <div class="image-half">
+                      <img src="myXiv-sc.png" alt="Description of image" />
+                  </div>
+                  
+              </div>
+          </div>
             <br>
             <br>
             <br>
@@ -128,7 +158,7 @@
         <script src="https://cdn.jsdelivr.net/npm/three@0.152.0/build/three.min.js"></script>
         <script>
         // PARAMETERS
-        const CONSTELLATION_COUNT = 17;       
+        const CONSTELLATION_COUNT = 15;       
         const STAR_COUNT_MIN = 3;           
         const STAR_COUNT_MAX = 8;          
         const LINE_CONNECTION_RATIO = 0.15;
@@ -469,6 +499,34 @@
                     link.click();
                 });
             });
+        </script>
+        <script>
+          // Scramble words animation
+          const words = ["you.", "everyone."]; // Words to scramble through
+          const scrambleWordElement = document.getElementById("scrambleWord");
+      
+          let currentWordIndex = 0;
+      
+          function scrambleWords() {
+            const currentWord = words[currentWordIndex];
+            const nextWord = words[(currentWordIndex + 1) % words.length];
+            currentWordIndex = (currentWordIndex + 1) % words.length;
+      
+            // Clear the existing word and replace each letter with animated spans
+            scrambleWordElement.innerHTML = "";
+      
+            // Create spinning effect for each letter
+            nextWord.split("").forEach((letter, i) => {
+              const span = document.createElement("span");
+              span.textContent = letter;
+              span.style.animationDelay = `${i * 0.1}s`; // Delay for a cascading effect
+              scrambleWordElement.appendChild(span);
+            });
+          }
+      
+          // Start the scrambling every 3 seconds
+          setInterval(scrambleWords, 3000);
+      
         </script>
     </div>
 
